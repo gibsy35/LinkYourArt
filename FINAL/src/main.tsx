@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { LanguageProvider } from "./context/LanguageContext";
-import { CurrencyProvider } from "./context/CurrencyContext";
+import { CurrencyProvider } from "./context/CurrencyContext.tsx";
+import { LanguageProvider } from "./context/LanguageContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
