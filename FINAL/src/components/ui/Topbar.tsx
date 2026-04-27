@@ -112,18 +112,7 @@ export const Topbar: React.FC<TopbarProps> = ({
             </button>
           </div>
         </div>
-        
-        <div className="flex items-center gap-4 lg:gap-8">
-          <div className="relative group hidden xl:block">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary-cyan transition-colors" size={12} />
-            <input 
-              className="bg-surface-highest/20 border border-white/5 focus:border-primary-cyan/50 focus:ring-0 text-[10px] pl-9 pr-14 py-2 w-48 xl:w-72 transition-all rounded-sm placeholder:text-on-surface-variant/30" 
-              placeholder={t("Search Institutional Contracts...", "Rechercher des Contrats Institutionnels...")} 
-              type="text" 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 px-1.5 py-0.5 bg-white/5 border border-white/10 rounded text-[8px] font-mono text-on-surface-variant/50 pointer-events-none group-focus-within:opacity-0 transition-opacity">
+        events-none group-focus-within:opacity-0 transition-opacity">
               <span>⌘</span>
               <span>K</span>
             </div>
